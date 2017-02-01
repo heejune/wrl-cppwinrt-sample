@@ -1,0 +1,35 @@
+// SampleLib.IDL
+import "inspectable.idl";
+import "Windows.Foundation.idl";
+import "eventtoken.idl";
+
+
+#define COMPONENT_VERSION 1.0
+
+namespace SampleLib
+{
+	runtimeclass DemoCore;
+
+	[uuid(d93f8ce1-ba66-4e27-a0ce-3948c23ef8d2), version(COMPONENT_VERSION)]
+	interface IDemoCore : IInspectable
+	{
+		// progress set/get
+		[propget] HRESULT Progress([out, retval] int* value);
+		[propput] HRESULT Progress([in] int value);
+
+		// property changed event handler
+		[eventadd] HRESULT OnProgressChanged([in] Windows.Foundation.TypedEventHandler<DemoCore *, int> * handler,
+			[out, retval] EventRegistrationToken * token);
+
+		[eventremove] HRESULT OnProgressChanged([in] EventRegistrationToken token);
+
+		// async
+		HRESULT GetDataAsync([out][retval] Windows.Foundation.IAsyncOperation<int>** value);
+	}
+
+	[version(COMPONENT_VERSION), activatable(COMPONENT_VERSION)]
+	runtimeclass DemoCore
+	{
+		[default] interface IDemoCore;
+	}
+}

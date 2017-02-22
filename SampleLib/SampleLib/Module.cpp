@@ -4,6 +4,8 @@
 
 #include <wrl\module.h>
 
+#include <LifespanTracker.h>
+
 extern "C" BOOL WINAPI DllMain(_In_opt_ HINSTANCE, DWORD, _In_opt_ LPVOID);
 extern "C" HRESULT WINAPI DllCanUnloadNow();
 
@@ -27,10 +29,36 @@ extern "C" HRESULT WINAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, _Deref
 }
 #endif
 
-extern "C" BOOL WINAPI DllMain(_In_opt_ HINSTANCE, DWORD, _In_opt_ LPVOID)
+STDAPI_(BOOL)
+DllMain(
+	_In_     HINSTANCE inst,
+	_In_     DWORD reason,
+	_In_opt_ void* pvreserved
+)
 {
+	UNREFERENCED_PARAMETER(inst);
+	UNREFERENCED_PARAMETER(pvreserved);
+
+	switch (reason)
+	{
+	case DLL_PROCESS_ATTACH:
+		break;
+
+	case DLL_PROCESS_DETACH:
+		// WRL normally takes care of this immediately after DllMain returns,
+		// but we move it in front of LifespanInfo::ReportLiveObjects to
+		// avoid false positive complaints about leaked activation factories.
+		auto &module = ::Microsoft::WRL::Module< ::Microsoft::WRL::InProc >::GetModule();
+		module.Terminate(nullptr, true);
+
+		LifespanInfo::ReportLiveObjectsNoLock();
+
+		break;
+	}
+
 	return TRUE;
 }
+
 
 extern "C" HRESULT WINAPI DllCanUnloadNow()
 {

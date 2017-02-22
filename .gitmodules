@@ -1,0 +1,6 @@
+[submodule "Win2D"]
+	path = Win2D
+	url = git@github.com:Microsoft/Win2D.git
+[submodule "cppwinrt"]
+	path = cppwinrt
+	url = git@github.com:Microsoft/cppwinrt.git

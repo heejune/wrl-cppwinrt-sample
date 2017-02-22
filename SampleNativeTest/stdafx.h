@@ -1,11 +1,16 @@
+// stdafx.h : include file for standard system include files,
+// or project specific include files that are used frequently, but
+// are changed infrequently
+//
+
 #pragma once
 
-#include <wrl.h>
-#include <wrl\async.h>
+#include "targetver.h"
 
-#include <windows.foundation.h>
-#include <windows.foundation.collections.h>
+// Headers for CppUnitTest
+#include "CppUnitTest.h"
 
+// TODO: reference additional headers your program requires here
 // Standard C++
 #include <algorithm>
 #include <assert.h>
@@ -25,9 +30,24 @@
 #include <unordered_map>
 #include <vector>
 
+// Win32
+#include <initguid.h>
+#include <wrl.h>
+#include <wrl\async.h>
+#include <strsafe.h>
+#include <d2d1_2.h>
+#include <d3d11.h>
+#include <dwrite_2.h>
+#include <dxgi1_3.h>
+#include <d2d1effectauthor.h>  
+#include <d2d1effecthelpers.h>
+#include <d3dcompiler.h>
+#include <DirectXMath.h>
+#include <wincodec.h>
+#include <shcore.h>
+#include <robuffer.h>
 
-
-// from Win2D
+// Inc
 #include <AsyncOperation.h>
 #include <ClosablePtr.h>
 #include <ComArray.h>
@@ -44,7 +64,3 @@
 #include <Vector.h>
 #include <WinStringWrapper.h>
 #include <WinStringBuilder.h>
-
-// cppwinrt
-#include <winrt/base.h>
-#include <winrt\Windows.Web.Http.h>

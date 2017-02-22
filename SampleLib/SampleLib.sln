@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleLib", "SampleLib\Samp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleUniversalApp", "..\SampleUniversalApp\SampleUniversalApp.csproj", "{B88B0BB5-498E-4153-BABB-D880A98EA940}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleNativeTest", "..\SampleNativeTest\SampleNativeTest.vcxproj", "{4A17C44B-01B7-4465-97FE-0804AA46728E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -45,6 +47,16 @@ Global
 		{B88B0BB5-498E-4153-BABB-D880A98EA940}.Release|x86.ActiveCfg = Release|x86
 		{B88B0BB5-498E-4153-BABB-D880A98EA940}.Release|x86.Build.0 = Release|x86
 		{B88B0BB5-498E-4153-BABB-D880A98EA940}.Release|x86.Deploy.0 = Release|x86
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Debug|ARM.ActiveCfg = Debug|Win32
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Debug|x64.ActiveCfg = Debug|x64
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Debug|x64.Build.0 = Debug|x64
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Debug|x86.ActiveCfg = Debug|Win32
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Debug|x86.Build.0 = Debug|Win32
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Release|ARM.ActiveCfg = Release|Win32
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Release|x64.ActiveCfg = Release|x64
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Release|x64.Build.0 = Release|x64
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Release|x86.ActiveCfg = Release|Win32
+		{4A17C44B-01B7-4465-97FE-0804AA46728E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

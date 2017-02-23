@@ -1,7 +1,7 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "CppUnitTest.h"
 //#include "..\SampleLib\SampleLib\SampleLib_h.h"
-#include "..\SampleLib\SampleLib\DemoCore.h"
+#include "..\SampleLib.Shared\DemoCore.h"
 
 using namespace Microsoft::WRL;
 using namespace ABI::SampleLib;

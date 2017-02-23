@@ -22,10 +22,13 @@
     <ProjectGuid>{F6727845-5F36-4448-AC67-F9568906580F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SampleLib</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AppContainerApplication>true</AppContainerApplication>
     <ApplicationType>Windows Store</ApplicationType>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10586.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -62,6 +65,7 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="Shared">
+    <Import Project="..\..\SampleLib.Shared\SampleLib.Shared.vcxitems" Label="Shared" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -106,11 +110,11 @@
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
-      <AdditionalMetadataDirectories>$(TargetPlatformSdkMetadataLocation);%(AdditionalMetadataDirectories);C:\Program Files (x86)\Windows Kits\10\UnionMetadata ;%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
+      <AdditionalMetadataDirectories>%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
       <PrependWithABINamepsace>true</PrependWithABINamepsace>
     </Midl>
     <PostBuildEvent>
-      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "$(TargetPlatformSdkMetadataLocation)" </Command>
+      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "c:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\2.0.0.0" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -131,11 +135,11 @@
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
-      <AdditionalMetadataDirectories>$(TargetPlatformSdkMetadataLocation);%(AdditionalMetadataDirectories);C:\Program Files (x86)\Windows Kits\10\UnionMetadata ;%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
+      <AdditionalMetadataDirectories>%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
       <PrependWithABINamepsace>true</PrependWithABINamepsace>
     </Midl>
     <PostBuildEvent>
-      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "$(TargetPlatformSdkMetadataLocation)" </Command>
+      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "c:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\2.0.0.0" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -160,11 +164,11 @@
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
-      <AdditionalMetadataDirectories>$(TargetPlatformSdkMetadataLocation);%(AdditionalMetadataDirectories);C:\Program Files (x86)\Windows Kits\10\UnionMetadata ;%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
+      <AdditionalMetadataDirectories>%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
       <PrependWithABINamepsace>true</PrependWithABINamepsace>
     </Midl>
     <PostBuildEvent>
-      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "$(TargetPlatformSdkMetadataLocation)" </Command>
+      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "c:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\2.0.0.0" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -189,16 +193,14 @@
     </Link>
     <Midl>
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
-      <AdditionalMetadataDirectories>$(TargetPlatformSdkMetadataLocation);%(AdditionalMetadataDirectories);C:\Program Files (x86)\Windows Kits\10\UnionMetadata ;%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
+      <AdditionalMetadataDirectories>%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
       <PrependWithABINamepsace>true</PrependWithABINamepsace>
     </Midl>
     <PostBuildEvent>
-      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "$(TargetPlatformSdkMetadataLocation)" </Command>
+      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "c:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\2.0.0.0" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DemoCore.cpp" />
-    <ClCompile Include="Message.cpp" />
     <ClCompile Include="Module.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -208,12 +210,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DemoCore.h" />
-    <ClInclude Include="Message.h" />
     <ClInclude Include="pch.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Midl Include="SampleLib.idl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

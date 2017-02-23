@@ -1,2 +1,10 @@
 SampleNativeTest/Debug/*
 SampleUniversalApp/obj/*
+SampleLib/SampleLib/Debug/
+*.suo
+SampleLib/ARM/Debug/
+SampleLib.Static/Debug/
+SampleLib/Debug/
+SampleLib.Static/ARM/
+*.ipch
+*.db

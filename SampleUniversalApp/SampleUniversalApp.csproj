@@ -127,8 +127,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="SampleLib">
-      <HintPath>..\SampleLib\Debug\SampleLib.winmd</HintPath>
+    <Reference Include="SampleLib.Demo">
+      <HintPath>..\SampleLib\Debug\SampleLib\SampleLib.Demo.winmd</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

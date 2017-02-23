@@ -10,35 +10,38 @@ namespace ABI
 {
 	namespace SampleLib
 	{
-		class DemoCore : public RuntimeClass<IDemoCore>,
-			private LifespanTracker<DemoCore>
+		namespace Demo
 		{
-			InspectableClass(L"SampleLib.DemoCore", BaseTrust)
+			class DemoCore : public RuntimeClass<IDemoCore>,
+				private LifespanTracker<DemoCore>
+			{
+				InspectableClass(L"SampleLib.DemoCore", BaseTrust)
 
-			unsigned m_progress;
+					unsigned m_progress;
 
-			using IOnProgressChangedHandler = ABI::Windows::Foundation::ITypedEventHandler<DemoCore *, int>;
-			using IAsyncHttpResultHandler = ::ABI::Windows::Foundation::IAsyncOperationWithProgress<ABI::Windows::Storage::Streams::IBuffer*, ABI::Windows::Web::Http::HttpProgress>;
-			EventSource<IOnProgressChangedHandler> m_events;
+				using IOnProgressChangedHandler = ABI::Windows::Foundation::ITypedEventHandler<DemoCore *, int>;
+				using IAsyncHttpResultHandler = ::ABI::Windows::Foundation::IAsyncOperationWithProgress<ABI::Windows::Storage::Streams::IBuffer*, ABI::Windows::Web::Http::HttpProgress>;
+				EventSource<IOnProgressChangedHandler> m_events;
 
-		public:
-			DemoCore();
+			public:
+				DemoCore();
 
-			STDMETHOD(get_Progress)(int* value) override;
-			STDMETHOD(put_Progress)(int value) override;
+				STDMETHOD(get_Progress)(int* value) override;
+				STDMETHOD(put_Progress)(int value) override;
 
-			STDMETHOD(add_OnProgressChanged)(IOnProgressChangedHandler* handler, EventRegistrationToken* token);
-			STDMETHOD(remove_OnProgressChanged)(EventRegistrationToken token);
+				STDMETHOD(add_OnProgressChanged)(IOnProgressChangedHandler* handler, EventRegistrationToken* token);
+				STDMETHOD(remove_OnProgressChanged)(EventRegistrationToken token);
 
-			// async
-			STDMETHOD(GetCppwinrtDataAsync)(::ABI::Windows::Foundation::IAsyncOperation<int>** value);
-			STDMETHOD(GetWrlDataAsync)(::ABI::Windows::Foundation::IAsyncOperation<HSTRING>** value);
+				// async
+				STDMETHOD(GetCppwinrtDataAsync)(::ABI::Windows::Foundation::IAsyncOperation<int>** value);
+				STDMETHOD(GetWrlDataAsync)(::ABI::Windows::Foundation::IAsyncOperation<HSTRING>** value);
 
-			STDMETHOD(CrawlWeb)(ABI::Windows::Foundation::IUriRuntimeClass *uri,
-				IAsyncHttpResultHandler **value);
+				STDMETHOD(CrawlWeb)(ABI::Windows::Foundation::IUriRuntimeClass *uri,
+					IAsyncHttpResultHandler **value);
 
-		};
+			};
 
-		ActivatableClass(DemoCore);
+			ActivatableClass(DemoCore);
+		}
 	}
 }

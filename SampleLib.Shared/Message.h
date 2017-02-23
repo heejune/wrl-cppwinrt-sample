@@ -13,17 +13,18 @@ using namespace Microsoft::WRL;
 
 namespace ABI
 {
-	namespace SampleLib
-	{
-		class Message : public RuntimeClass<IMessage>, private LifespanTracker<DemoCore>
+	namespace SampleLib {
+		namespace Demo
 		{
-			InspectableClass(L"SampleLib.Message", BaseTrust)
-		public:
-			Message();
+			class Message : public RuntimeClass<IMessage>, private LifespanTracker<DemoCore>
+			{
+				InspectableClass(L"SampleLib.Message", BaseTrust)
+			public:
+				Message();
 
-			STDMETHOD(get_Description)(HSTRING* value) override;
-			STDMETHOD(put_Description)(HSTRING value) override;
-		};
-
+				STDMETHOD(get_Description)(HSTRING* value) override;
+				STDMETHOD(put_Description)(HSTRING value) override;
+			};
+		}
 	}
 }

@@ -5,19 +5,21 @@ namespace ABI
 {
 	namespace SampleLib
 	{
+		namespace Demo {
 
-		Message::Message()
-		{
-		}
+			Message::Message()
+			{
+			}
 
-		STDMETHODIMP Message::get_Description(HSTRING* value)
-		{
-			return S_OK;
-		}
+			STDMETHODIMP Message::get_Description(HSTRING* value)
+			{
+				return S_OK;
+			}
 
-		STDMETHODIMP Message::put_Description(HSTRING value)
-		{
-			return S_OK;
+			STDMETHODIMP Message::put_Description(HSTRING value)
+			{
+				return S_OK;
+			}
 		}
 	}
 }

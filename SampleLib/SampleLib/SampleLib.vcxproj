@@ -112,9 +112,10 @@
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
       <AdditionalMetadataDirectories>%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
       <PrependWithABINamepsace>true</PrependWithABINamepsace>
+      <MetadataFileName>$(IntDir)%(Filename).winmd</MetadataFileName>
     </Midl>
     <PostBuildEvent>
-      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "c:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\2.0.0.0" </Command>
+      <Command>mdmerge /i $(IntDir) /o $(OutputPath) /partial /metadata_dir  "C:\Program Files (x86)\Windows Kits\10\UnionMetadata"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -137,9 +138,10 @@
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
       <AdditionalMetadataDirectories>%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
       <PrependWithABINamepsace>true</PrependWithABINamepsace>
+      <MetadataFileName>$(IntDir)%(Filename).winmd</MetadataFileName>
     </Midl>
     <PostBuildEvent>
-      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "c:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\2.0.0.0" </Command>
+      <Command>mdmerge /i $(IntDir) /o $(OutputPath) /partial /metadata_dir  "C:\Program Files (x86)\Windows Kits\10\UnionMetadata"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -166,9 +168,10 @@
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
       <AdditionalMetadataDirectories>%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
       <PrependWithABINamepsace>true</PrependWithABINamepsace>
+      <MetadataFileName>$(IntDir)%(Filename).winmd</MetadataFileName>
     </Midl>
     <PostBuildEvent>
-      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "c:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\2.0.0.0" </Command>
+      <Command>mdmerge /i $(IntDir) /o $(OutputPath) /partial /metadata_dir  "C:\Program Files (x86)\Windows Kits\10\UnionMetadata"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -195,9 +198,10 @@
       <EnableWindowsRuntime>true</EnableWindowsRuntime>
       <AdditionalMetadataDirectories>%(AdditionalMetadataDirectories)</AdditionalMetadataDirectories>
       <PrependWithABINamepsace>true</PrependWithABINamepsace>
+      <MetadataFileName>$(IntDir)%(Filename).winmd</MetadataFileName>
     </Midl>
     <PostBuildEvent>
-      <Command>mdmerge /i $(ProjectDir) /o $(OutputPath) /partial /metadata_dir "c:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\2.0.0.0" </Command>
+      <Command>mdmerge /i $(IntDir) /o $(OutputPath) /partial /metadata_dir  "C:\Program Files (x86)\Windows Kits\10\UnionMetadata"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

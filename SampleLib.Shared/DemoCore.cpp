@@ -36,87 +36,89 @@ namespace ABI
 {
 	namespace SampleLib
 	{
-		DemoCore::DemoCore() : m_progress(0)
-		{
-		}
-
-		STDMETHODIMP DemoCore::get_Progress(int* value)
-		{
-			*value = m_progress;
-			return S_OK;
-		}
-
-		STDMETHODIMP DemoCore::put_Progress(int value)
-		{
-			if (m_progress != value)
+		namespace Demo {
+			DemoCore::DemoCore() : m_progress(0)
 			{
-				m_progress = value;
-
-				m_events.InvokeAll(this, m_progress);
 			}
 
-			return S_OK;
-		}
-
-		STDMETHODIMP DemoCore::add_OnProgressChanged(IOnProgressChangedHandler* handler, EventRegistrationToken* token)
-		{
-			m_events.Add(handler, token);
-			return S_OK;
-		}
-
-		STDMETHODIMP DemoCore::remove_OnProgressChanged(EventRegistrationToken token)
-		{
-			m_events.Remove(token);
-			return S_OK;
-		}
-
-		winrt::Windows::Foundation::IAsyncOperation<int> GetAsyncOp()
-		{
-			using namespace winrt;
-			using namespace Windows::Foundation;
-
-			for (int i = 0; i != 5; ++i)
+			STDMETHODIMP DemoCore::get_Progress(int* value)
 			{
-				co_await 5000ms;
+				*value = m_progress;
+				return S_OK;
 			}
 
-			return 1;
-		}
+			STDMETHODIMP DemoCore::put_Progress(int value)
+			{
+				if (m_progress != value)
+				{
+					m_progress = value;
 
-		STDMETHODIMP DemoCore::GetCppwinrtDataAsync(::ABI::Windows::Foundation::IAsyncOperation<int>** value)
-		{
-			auto asyncOp = GetAsyncOp();
+					m_events.InvokeAll(this, m_progress);
+				}
 
-			*value = reinterpret_cast<::ABI::Windows::Foundation::IAsyncOperation<int>*>(winrt::detach(asyncOp));
+				return S_OK;
+			}
 
-			return S_OK;
-		}
+			STDMETHODIMP DemoCore::add_OnProgressChanged(IOnProgressChangedHandler* handler, EventRegistrationToken* token)
+			{
+				m_events.Add(handler, token);
+				return S_OK;
+			}
 
-		STDMETHODIMP DemoCore::GetWrlDataAsync(::ABI::Windows::Foundation::IAsyncOperation<HSTRING>** value)
-		{
-			//asyncOperation.CopyTo(value);
-			return S_OK;
-		}
+			STDMETHODIMP DemoCore::remove_OnProgressChanged(EventRegistrationToken token)
+			{
+				m_events.Remove(token);
+				return S_OK;
+			}
 
-		STDMETHODIMP DemoCore::CrawlWeb(
-			ABI::Windows::Foundation::IUriRuntimeClass *raw_uri,
-			IAsyncHttpResultHandler **value)
-		{
-			_winrt::HttpClient client;
-			auto winrt_abi_uri = reinterpret_cast<winrt::ABI::Windows::Foundation::IUriRuntimeClass *> (raw_uri);
-			_winrt::IUriRuntimeClass runtimeUri;
-			winrt::copy_from(runtimeUri, winrt_abi_uri);
+			winrt::Windows::Foundation::IAsyncOperation<int> GetAsyncOp()
+			{
+				using namespace winrt;
+				using namespace Windows::Foundation;
 
-			_winrt::Uri uri(runtimeUri.RawUri());
+				for (int i = 0; i != 5; ++i)
+				{
+					co_await 5000ms;
+				}
 
-			auto op = client.GetBufferAsync(uri);
-			
-			// copy instead of detach?
-			*value = reinterpret_cast<IAsyncHttpResultHandler*>(winrt::detach(op));
-			//*value = reinterpret_cast<IAsyncHttpResultHandler*>(winrt::get(op));
-			//winrt::copy_to(winrt::get(op), reinterpret_cast<IAsyncHttpResultHandler*>(*value));
-			
-			return S_OK;
+				return 1;
+			}
+
+			STDMETHODIMP DemoCore::GetCppwinrtDataAsync(::ABI::Windows::Foundation::IAsyncOperation<int>** value)
+			{
+				auto asyncOp = GetAsyncOp();
+
+				*value = reinterpret_cast<::ABI::Windows::Foundation::IAsyncOperation<int>*>(winrt::detach(asyncOp));
+
+				return S_OK;
+			}
+
+			STDMETHODIMP DemoCore::GetWrlDataAsync(::ABI::Windows::Foundation::IAsyncOperation<HSTRING>** value)
+			{
+				//asyncOperation.CopyTo(value);
+				return S_OK;
+			}
+
+			STDMETHODIMP DemoCore::CrawlWeb(
+				ABI::Windows::Foundation::IUriRuntimeClass *raw_uri,
+				IAsyncHttpResultHandler **value)
+			{
+				_winrt::HttpClient client;
+				auto winrt_abi_uri = reinterpret_cast<winrt::ABI::Windows::Foundation::IUriRuntimeClass *> (raw_uri);
+				_winrt::IUriRuntimeClass runtimeUri;
+				winrt::copy_from(runtimeUri, winrt_abi_uri);
+
+				_winrt::Uri uri(runtimeUri.RawUri());
+
+				auto op = client.GetBufferAsync(uri);
+
+				// copy instead of detach?
+				*value = reinterpret_cast<IAsyncHttpResultHandler*>(winrt::detach(op));
+				//*value = reinterpret_cast<IAsyncHttpResultHandler*>(winrt::get(op));
+				//winrt::copy_to(winrt::get(op), reinterpret_cast<IAsyncHttpResultHandler*>(*value));
+
+				return S_OK;
+			}
 		}
 	}
 }

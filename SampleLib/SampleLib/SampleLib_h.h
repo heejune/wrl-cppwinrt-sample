@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.01.0620 */
 /* at Tue Jan 19 12:14:07 2038
  */
-/* Compiler settings for C:\Users\heath\AppData\Local\Temp\SampleLib.idl-3422656c:
+/* Compiler settings for C:\Users\hekim\AppData\Local\Temp\SampleLib.idl-c2348337:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.01.0620 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
@@ -54,43 +54,47 @@
 
 /* Forward Declarations */ 
 
-#ifndef ____x_ABI_CSampleLib_CIMessage_FWD_DEFINED__
-#define ____x_ABI_CSampleLib_CIMessage_FWD_DEFINED__
-typedef interface __x_ABI_CSampleLib_CIMessage __x_ABI_CSampleLib_CIMessage;
+#ifndef ____x_ABI_CSampleLib_CDemo_CIMessage_FWD_DEFINED__
+#define ____x_ABI_CSampleLib_CDemo_CIMessage_FWD_DEFINED__
+typedef interface __x_ABI_CSampleLib_CDemo_CIMessage __x_ABI_CSampleLib_CDemo_CIMessage;
 
 #ifdef __cplusplus
 namespace ABI {
     namespace SampleLib {
-        interface IMessage;
+        namespace Demo {
+            interface IMessage;
+        } /* end namespace */
     } /* end namespace */
 } /* end namespace */
 
 #endif /* __cplusplus */
 
-#endif 	/* ____x_ABI_CSampleLib_CIMessage_FWD_DEFINED__ */
+#endif 	/* ____x_ABI_CSampleLib_CDemo_CIMessage_FWD_DEFINED__ */
 
 
-#ifndef ____FITypedEventHandler_2_SampleLib__CDemoCore_int_FWD_DEFINED__
-#define ____FITypedEventHandler_2_SampleLib__CDemoCore_int_FWD_DEFINED__
-typedef interface __FITypedEventHandler_2_SampleLib__CDemoCore_int __FITypedEventHandler_2_SampleLib__CDemoCore_int;
+#ifndef ____FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_FWD_DEFINED__
+#define ____FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_FWD_DEFINED__
+typedef interface __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int;
 
-#endif 	/* ____FITypedEventHandler_2_SampleLib__CDemoCore_int_FWD_DEFINED__ */
+#endif 	/* ____FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_FWD_DEFINED__ */
 
 
-#ifndef ____x_ABI_CSampleLib_CIDemoCore_FWD_DEFINED__
-#define ____x_ABI_CSampleLib_CIDemoCore_FWD_DEFINED__
-typedef interface __x_ABI_CSampleLib_CIDemoCore __x_ABI_CSampleLib_CIDemoCore;
+#ifndef ____x_ABI_CSampleLib_CDemo_CIDemoCore_FWD_DEFINED__
+#define ____x_ABI_CSampleLib_CDemo_CIDemoCore_FWD_DEFINED__
+typedef interface __x_ABI_CSampleLib_CDemo_CIDemoCore __x_ABI_CSampleLib_CDemo_CIDemoCore;
 
 #ifdef __cplusplus
 namespace ABI {
     namespace SampleLib {
-        interface IDemoCore;
+        namespace Demo {
+            interface IDemoCore;
+        } /* end namespace */
     } /* end namespace */
 } /* end namespace */
 
 #endif /* __cplusplus */
 
-#endif 	/* ____x_ABI_CSampleLib_CIDemoCore_FWD_DEFINED__ */
+#endif 	/* ____x_ABI_CSampleLib_CDemo_CIDemoCore_FWD_DEFINED__ */
 
 
 /* header files for imported files */
@@ -116,7 +120,9 @@ extern "C" {
 #ifdef __cplusplus
 namespace ABI {
 namespace SampleLib {
+namespace Demo {
 class DemoCore;
+} /*Demo*/
 } /*SampleLib*/
 }
 #endif
@@ -124,7 +130,9 @@ class DemoCore;
 #ifdef __cplusplus
 namespace ABI {
 namespace SampleLib {
+namespace Demo {
 interface IDemoCore;
+} /*Demo*/
 } /*SampleLib*/
 }
 #endif
@@ -139,52 +147,6 @@ interface IDemoCore;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0000_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0000_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3106 */
-
-
-
-
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3106 */
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3106_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3106_v0_0_s_ifspec;
-
-/* interface __MIDL_itf_SampleLib_0000_0001 */
-/* [local] */ 
-
-#ifndef DEF___FITypedEventHandler_2_SampleLib__CDemoCore_int_USE
-#define DEF___FITypedEventHandler_2_SampleLib__CDemoCore_int_USE
-#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
-} /*extern "C"*/ 
-namespace ABI { namespace Windows { namespace Foundation {
-template <>
-struct __declspec(uuid("1f1e9031-11dc-555b-9b1c-0586f8191e14"))
-ITypedEventHandler<ABI::SampleLib::DemoCore*,int> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::SampleLib::DemoCore*, ABI::SampleLib::IDemoCore*>,int> {
-static const wchar_t* z_get_rc_name_impl() {
-return L"Windows.Foundation.TypedEventHandler`2<SampleLib.DemoCore, Int32>"; }
-};
-typedef ITypedEventHandler<ABI::SampleLib::DemoCore*,int> __FITypedEventHandler_2_SampleLib__CDemoCore_int_t;
-#define ____FITypedEventHandler_2_SampleLib__CDemoCore_int_FWD_DEFINED__
-#define __FITypedEventHandler_2_SampleLib__CDemoCore_int ABI::Windows::Foundation::__FITypedEventHandler_2_SampleLib__CDemoCore_int_t
-
-/* ABI */ } /* Windows */ } /* Foundation */ }
-extern "C" {
-#endif //__cplusplus
-#endif /* DEF___FITypedEventHandler_2_SampleLib__CDemoCore_int_USE */
-
-
-/* interface __MIDL_itf_SampleLib_0000_0001 */
-/* [local] */ 
-
-
-
-
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0001_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0001_v0_0_s_ifspec;
-
 /* interface __MIDL_itf_SampleLib2Eidl_0000_3107 */
 
 
@@ -197,6 +159,52 @@ extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0001_v0_0_s_ifspec;
 
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3107_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3107_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_SampleLib_0000_0001 */
+/* [local] */ 
+
+#ifndef DEF___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_USE
+#define DEF___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_USE
+#if defined(__cplusplus) && !defined(RO_NO_TEMPLATE_NAME)
+} /*extern "C"*/ 
+namespace ABI { namespace Windows { namespace Foundation {
+template <>
+struct __declspec(uuid("7258528c-4b14-5543-94bb-71e39fc03e27"))
+ITypedEventHandler<ABI::SampleLib::Demo::DemoCore*,int> : ITypedEventHandler_impl<ABI::Windows::Foundation::Internal::AggregateType<ABI::SampleLib::Demo::DemoCore*, ABI::SampleLib::Demo::IDemoCore*>,int> {
+static const wchar_t* z_get_rc_name_impl() {
+return L"Windows.Foundation.TypedEventHandler`2<SampleLib.Demo.DemoCore, Int32>"; }
+};
+typedef ITypedEventHandler<ABI::SampleLib::Demo::DemoCore*,int> __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_t;
+#define ____FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_FWD_DEFINED__
+#define __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int ABI::Windows::Foundation::__FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_t
+
+/* ABI */ } /* Windows */ } /* Foundation */ }
+extern "C" {
+#endif //__cplusplus
+#endif /* DEF___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_USE */
+
+
+/* interface __MIDL_itf_SampleLib_0000_0001 */
+/* [local] */ 
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0001_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0001_v0_0_s_ifspec;
+
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3108 */
+
+
+
+
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3108 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3108_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3108_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0002 */
 /* [local] */ 
@@ -231,18 +239,18 @@ extern "C" {
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0002_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0002_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3108 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3109 */
 
 
 
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3108 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3109 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3108_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3108_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3109_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3109_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0003 */
 /* [local] */ 
@@ -277,18 +285,18 @@ extern "C" {
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0003_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0003_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3109 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3110 */
 
 
 
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3109 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3110 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3109_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3109_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3110_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3110_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0004 */
 /* [local] */ 
@@ -323,18 +331,18 @@ extern "C" {
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0004_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0004_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3110 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3111 */
 
 
 
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3110 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3111 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3110_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3110_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3111_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3111_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0005 */
 /* [local] */ 
@@ -369,18 +377,18 @@ extern "C" {
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0005_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0005_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3111 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3112 */
 
 
 
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3111 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3112 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3111_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3111_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3112_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3112_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0006 */
 /* [local] */ 
@@ -441,18 +449,18 @@ struct HttpProgress;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0006_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0006_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3112 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3113 */
 
 
 
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3112 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3113 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3112_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3112_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3113_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3113_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0007 */
 /* [local] */ 
@@ -487,18 +495,18 @@ extern "C" {
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0007_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0007_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3113 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3114 */
 
 
 
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3113 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3114 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3113_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3113_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3114_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3114_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0008 */
 /* [local] */ 
@@ -533,18 +541,18 @@ extern "C" {
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0008_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0008_v0_0_s_ifspec;
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3114 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3115 */
 
 
 
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3114 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3115 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3114_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3114_v0_0_s_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3115_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3115_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0009 */
 /* [local] */ 
@@ -568,9 +576,10 @@ typedef IAsyncOperationWithProgress<ABI::Windows::Storage::Streams::IBuffer*,str
 extern "C" {
 #endif //__cplusplus
 #endif /* DEF___FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_Windows__CWeb__CHttp__CHttpProgress_USE */
-#if !defined(____x_ABI_CSampleLib_CIMessage_INTERFACE_DEFINED__)
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_SampleLib_IMessage[] = L"SampleLib.IMessage";
-#endif /* !defined(____x_ABI_CSampleLib_CIMessage_INTERFACE_DEFINED__) */
+
+#if !defined(____x_ABI_CSampleLib_CDemo_CIMessage_INTERFACE_DEFINED__)
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_SampleLib_Demo_IMessage[] = L"SampleLib.Demo.IMessage";
+#endif /* !defined(____x_ABI_CSampleLib_CDemo_CIMessage_INTERFACE_DEFINED__) */
 
 
 /* interface __MIDL_itf_SampleLib_0000_0009 */
@@ -579,92 +588,95 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_SampleL
 
 
 
+
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0009_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0009_v0_0_s_ifspec;
 
-#ifndef ____x_ABI_CSampleLib_CIMessage_INTERFACE_DEFINED__
-#define ____x_ABI_CSampleLib_CIMessage_INTERFACE_DEFINED__
+#ifndef ____x_ABI_CSampleLib_CDemo_CIMessage_INTERFACE_DEFINED__
+#define ____x_ABI_CSampleLib_CDemo_CIMessage_INTERFACE_DEFINED__
 
-/* interface __x_ABI_CSampleLib_CIMessage */
+/* interface __x_ABI_CSampleLib_CDemo_CIMessage */
 /* [uuid][object] */ 
 
 
 
-/* interface ABI::SampleLib::IMessage */
+/* interface ABI::SampleLib::Demo::IMessage */
 /* [uuid][object] */ 
 
 
-EXTERN_C const IID IID___x_ABI_CSampleLib_CIMessage;
+EXTERN_C const IID IID___x_ABI_CSampleLib_CDemo_CIMessage;
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
     } /* end extern "C" */
     namespace ABI {
         namespace SampleLib {
-            
-            MIDL_INTERFACE("74f49eb3-3491-40c3-a4b7-87113577c4b1")
-            IMessage : public IInspectable
-            {
-            public:
-                virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Description( 
-                    /* [out][retval] */ HSTRING *value) = 0;
+            namespace Demo {
                 
-                virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Description( 
-                    /* [in] */ HSTRING value) = 0;
+                MIDL_INTERFACE("74f49eb3-3491-40c3-a4b7-87113577c4b1")
+                IMessage : public IInspectable
+                {
+                public:
+                    virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Description( 
+                        /* [out][retval] */ HSTRING *value) = 0;
+                    
+                    virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Description( 
+                        /* [in] */ HSTRING value) = 0;
+                    
+                };
+
+                extern const __declspec(selectany) IID & IID_IMessage = __uuidof(IMessage);
+
                 
-            };
-
-            extern const __declspec(selectany) IID & IID_IMessage = __uuidof(IMessage);
-
-            
+            }  /* end namespace */
         }  /* end namespace */
     }  /* end namespace */
     extern "C" { 
     
 #else 	/* C style interface */
 
-    typedef struct __x_ABI_CSampleLib_CIMessageVtbl
+    typedef struct __x_ABI_CSampleLib_CDemo_CIMessageVtbl
     {
         BEGIN_INTERFACE
         
         HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-            __x_ABI_CSampleLib_CIMessage * This,
+            __x_ABI_CSampleLib_CDemo_CIMessage * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
             _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
-            __x_ABI_CSampleLib_CIMessage * This);
+            __x_ABI_CSampleLib_CDemo_CIMessage * This);
         
         ULONG ( STDMETHODCALLTYPE *Release )( 
-            __x_ABI_CSampleLib_CIMessage * This);
+            __x_ABI_CSampleLib_CDemo_CIMessage * This);
         
         HRESULT ( STDMETHODCALLTYPE *GetIids )( 
-            __x_ABI_CSampleLib_CIMessage * This,
+            __x_ABI_CSampleLib_CDemo_CIMessage * This,
             /* [out] */ ULONG *iidCount,
             /* [size_is][size_is][out] */ IID **iids);
         
         HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
-            __x_ABI_CSampleLib_CIMessage * This,
+            __x_ABI_CSampleLib_CDemo_CIMessage * This,
             /* [out] */ HSTRING *className);
         
         HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
-            __x_ABI_CSampleLib_CIMessage * This,
+            __x_ABI_CSampleLib_CDemo_CIMessage * This,
             /* [out] */ TrustLevel *trustLevel);
         
         /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Description )( 
-            __x_ABI_CSampleLib_CIMessage * This,
+            __x_ABI_CSampleLib_CDemo_CIMessage * This,
             /* [out][retval] */ HSTRING *value);
         
         /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Description )( 
-            __x_ABI_CSampleLib_CIMessage * This,
+            __x_ABI_CSampleLib_CDemo_CIMessage * This,
             /* [in] */ HSTRING value);
         
         END_INTERFACE
-    } __x_ABI_CSampleLib_CIMessageVtbl;
+    } __x_ABI_CSampleLib_CDemo_CIMessageVtbl;
 
-    interface __x_ABI_CSampleLib_CIMessage
+    interface __x_ABI_CSampleLib_CDemo_CIMessage
     {
-        CONST_VTBL struct __x_ABI_CSampleLib_CIMessageVtbl *lpVtbl;
+        CONST_VTBL struct __x_ABI_CSampleLib_CDemo_CIMessageVtbl *lpVtbl;
     };
 
     
@@ -672,30 +684,30 @@ EXTERN_C const IID IID___x_ABI_CSampleLib_CIMessage;
 #ifdef COBJMACROS
 
 
-#define __x_ABI_CSampleLib_CIMessage_QueryInterface(This,riid,ppvObject)	\
+#define __x_ABI_CSampleLib_CDemo_CIMessage_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __x_ABI_CSampleLib_CIMessage_AddRef(This)	\
+#define __x_ABI_CSampleLib_CDemo_CIMessage_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __x_ABI_CSampleLib_CIMessage_Release(This)	\
+#define __x_ABI_CSampleLib_CDemo_CIMessage_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __x_ABI_CSampleLib_CIMessage_GetIids(This,iidCount,iids)	\
+#define __x_ABI_CSampleLib_CDemo_CIMessage_GetIids(This,iidCount,iids)	\
     ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
 
-#define __x_ABI_CSampleLib_CIMessage_GetRuntimeClassName(This,className)	\
+#define __x_ABI_CSampleLib_CDemo_CIMessage_GetRuntimeClassName(This,className)	\
     ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
 
-#define __x_ABI_CSampleLib_CIMessage_GetTrustLevel(This,trustLevel)	\
+#define __x_ABI_CSampleLib_CDemo_CIMessage_GetTrustLevel(This,trustLevel)	\
     ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
 
 
-#define __x_ABI_CSampleLib_CIMessage_get_Description(This,value)	\
+#define __x_ABI_CSampleLib_CDemo_CIMessage_get_Description(This,value)	\
     ( (This)->lpVtbl -> get_Description(This,value) ) 
 
-#define __x_ABI_CSampleLib_CIMessage_put_Description(This,value)	\
+#define __x_ABI_CSampleLib_CDemo_CIMessage_put_Description(This,value)	\
     ( (This)->lpVtbl -> put_Description(This,value) ) 
 
 #endif /* COBJMACROS */
@@ -706,27 +718,27 @@ EXTERN_C const IID IID___x_ABI_CSampleLib_CIMessage;
 
 
 
-#endif 	/* ____x_ABI_CSampleLib_CIMessage_INTERFACE_DEFINED__ */
+#endif 	/* ____x_ABI_CSampleLib_CDemo_CIMessage_INTERFACE_DEFINED__ */
 
 
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3115 */
-
-
-
-
-/* interface __MIDL_itf_SampleLib2Eidl_0000_3115 */
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3116 */
 
 
 
 
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3115_v0_0_c_ifspec;
-extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3115_v0_0_s_ifspec;
+/* interface __MIDL_itf_SampleLib2Eidl_0000_3116 */
+
+
+
+
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3116_v0_0_c_ifspec;
+extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3116_v0_0_s_ifspec;
 
 /* interface __MIDL_itf_SampleLib_0000_0011 */
 /* [local] */ 
 
-#ifndef DEF___FITypedEventHandler_2_SampleLib__CDemoCore_int
-#define DEF___FITypedEventHandler_2_SampleLib__CDemoCore_int
+#ifndef DEF___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int
+#define DEF___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int
 #if !defined(__cplusplus) || defined(RO_NO_TEMPLATE_NAME)
 
 
@@ -738,28 +750,28 @@ extern RPC_IF_HANDLE __MIDL_itf_SampleLib2Eidl_0000_3115_v0_0_s_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0011_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0011_v0_0_s_ifspec;
 
-#ifndef ____FITypedEventHandler_2_SampleLib__CDemoCore_int_INTERFACE_DEFINED__
-#define ____FITypedEventHandler_2_SampleLib__CDemoCore_int_INTERFACE_DEFINED__
+#ifndef ____FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_INTERFACE_DEFINED__
+#define ____FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_INTERFACE_DEFINED__
 
-/* interface __FITypedEventHandler_2_SampleLib__CDemoCore_int */
+/* interface __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int */
 /* [unique][uuid][object] */ 
 
 
 
-/* interface __FITypedEventHandler_2_SampleLib__CDemoCore_int */
+/* interface __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int */
 /* [unique][uuid][object] */ 
 
 
-EXTERN_C const IID IID___FITypedEventHandler_2_SampleLib__CDemoCore_int;
+EXTERN_C const IID IID___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int;
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
     
-    MIDL_INTERFACE("1f1e9031-11dc-555b-9b1c-0586f8191e14")
-    __FITypedEventHandler_2_SampleLib__CDemoCore_int : public IUnknown
+    MIDL_INTERFACE("7258528c-4b14-5543-94bb-71e39fc03e27")
+    __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int : public IUnknown
     {
     public:
         virtual HRESULT STDMETHODCALLTYPE Invoke( 
-            /* [in] */ ABI::SampleLib::IDemoCore *sender,
+            /* [in] */ ABI::SampleLib::Demo::IDemoCore *sender,
             /* [in] */ int e) = 0;
         
     };
@@ -767,33 +779,33 @@ EXTERN_C const IID IID___FITypedEventHandler_2_SampleLib__CDemoCore_int;
     
 #else 	/* C style interface */
 
-    typedef struct __FITypedEventHandler_2_SampleLib__CDemoCore_intVtbl
+    typedef struct __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_intVtbl
     {
         BEGIN_INTERFACE
         
         HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-            __FITypedEventHandler_2_SampleLib__CDemoCore_int * This,
+            __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
             _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
-            __FITypedEventHandler_2_SampleLib__CDemoCore_int * This);
+            __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int * This);
         
         ULONG ( STDMETHODCALLTYPE *Release )( 
-            __FITypedEventHandler_2_SampleLib__CDemoCore_int * This);
+            __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int * This);
         
         HRESULT ( STDMETHODCALLTYPE *Invoke )( 
-            __FITypedEventHandler_2_SampleLib__CDemoCore_int * This,
-            /* [in] */ __x_ABI_CSampleLib_CIDemoCore *sender,
+            __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int * This,
+            /* [in] */ __x_ABI_CSampleLib_CDemo_CIDemoCore *sender,
             /* [in] */ int e);
         
         END_INTERFACE
-    } __FITypedEventHandler_2_SampleLib__CDemoCore_intVtbl;
+    } __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_intVtbl;
 
-    interface __FITypedEventHandler_2_SampleLib__CDemoCore_int
+    interface __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int
     {
-        CONST_VTBL struct __FITypedEventHandler_2_SampleLib__CDemoCore_intVtbl *lpVtbl;
+        CONST_VTBL struct __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_intVtbl *lpVtbl;
     };
 
     
@@ -801,17 +813,17 @@ EXTERN_C const IID IID___FITypedEventHandler_2_SampleLib__CDemoCore_int;
 #ifdef COBJMACROS
 
 
-#define __FITypedEventHandler_2_SampleLib__CDemoCore_int_QueryInterface(This,riid,ppvObject)	\
+#define __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __FITypedEventHandler_2_SampleLib__CDemoCore_int_AddRef(This)	\
+#define __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __FITypedEventHandler_2_SampleLib__CDemoCore_int_Release(This)	\
+#define __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __FITypedEventHandler_2_SampleLib__CDemoCore_int_Invoke(This,sender,e)	\
+#define __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_Invoke(This,sender,e)	\
     ( (This)->lpVtbl -> Invoke(This,sender,e) ) 
 
 #endif /* COBJMACROS */
@@ -822,17 +834,17 @@ EXTERN_C const IID IID___FITypedEventHandler_2_SampleLib__CDemoCore_int;
 
 
 
-#endif 	/* ____FITypedEventHandler_2_SampleLib__CDemoCore_int_INTERFACE_DEFINED__ */
+#endif 	/* ____FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_INTERFACE_DEFINED__ */
 
 
 /* interface __MIDL_itf_SampleLib_0000_0012 */
 /* [local] */ 
 
 #endif /* pinterface */
-#endif /* DEF___FITypedEventHandler_2_SampleLib__CDemoCore_int */
-#if !defined(____x_ABI_CSampleLib_CIDemoCore_INTERFACE_DEFINED__)
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_SampleLib_IDemoCore[] = L"SampleLib.IDemoCore";
-#endif /* !defined(____x_ABI_CSampleLib_CIDemoCore_INTERFACE_DEFINED__) */
+#endif /* DEF___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int */
+#if !defined(____x_ABI_CSampleLib_CDemo_CIDemoCore_INTERFACE_DEFINED__)
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_SampleLib_Demo_IDemoCore[] = L"SampleLib.Demo.IDemoCore";
+#endif /* !defined(____x_ABI_CSampleLib_CDemo_CIDemoCore_INTERFACE_DEFINED__) */
 
 
 /* interface __MIDL_itf_SampleLib_0000_0012 */
@@ -843,128 +855,130 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_SampleL
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0012_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_SampleLib_0000_0012_v0_0_s_ifspec;
 
-#ifndef ____x_ABI_CSampleLib_CIDemoCore_INTERFACE_DEFINED__
-#define ____x_ABI_CSampleLib_CIDemoCore_INTERFACE_DEFINED__
+#ifndef ____x_ABI_CSampleLib_CDemo_CIDemoCore_INTERFACE_DEFINED__
+#define ____x_ABI_CSampleLib_CDemo_CIDemoCore_INTERFACE_DEFINED__
 
-/* interface __x_ABI_CSampleLib_CIDemoCore */
+/* interface __x_ABI_CSampleLib_CDemo_CIDemoCore */
 /* [uuid][object] */ 
 
 
 
-/* interface ABI::SampleLib::IDemoCore */
+/* interface ABI::SampleLib::Demo::IDemoCore */
 /* [uuid][object] */ 
 
 
-EXTERN_C const IID IID___x_ABI_CSampleLib_CIDemoCore;
+EXTERN_C const IID IID___x_ABI_CSampleLib_CDemo_CIDemoCore;
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
     } /* end extern "C" */
     namespace ABI {
         namespace SampleLib {
-            
-            MIDL_INTERFACE("d93f8ce1-ba66-4e27-a0ce-3948c23ef8d2")
-            IDemoCore : public IInspectable
-            {
-            public:
-                virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Progress( 
-                    /* [out][retval] */ int *value) = 0;
+            namespace Demo {
                 
-                virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Progress( 
-                    /* [in] */ int value) = 0;
-                
-                virtual HRESULT STDMETHODCALLTYPE add_OnProgressChanged( 
-                    /* [in] */ __FITypedEventHandler_2_SampleLib__CDemoCore_int *handler,
-                    /* [out][retval] */ EventRegistrationToken *token) = 0;
-                
-                virtual HRESULT STDMETHODCALLTYPE remove_OnProgressChanged( 
-                    /* [in] */ EventRegistrationToken token) = 0;
-                
-                virtual HRESULT STDMETHODCALLTYPE GetCppwinrtDataAsync( 
-                    /* [out][retval] */ __FIAsyncOperation_1_int **value) = 0;
-                
-                virtual HRESULT STDMETHODCALLTYPE GetWrlDataAsync( 
-                    /* [out][retval] */ __FIAsyncOperation_1_HSTRING **value) = 0;
-                
-                virtual HRESULT STDMETHODCALLTYPE CrawlWeb( 
-                    /* [in] */ ABI::Windows::Foundation::IUriRuntimeClass *uri,
-                    /* [out][retval] */ __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_Windows__CWeb__CHttp__CHttpProgress **value) = 0;
-                
-            };
+                MIDL_INTERFACE("d93f8ce1-ba66-4e27-a0ce-3948c23ef8d2")
+                IDemoCore : public IInspectable
+                {
+                public:
+                    virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Progress( 
+                        /* [out][retval] */ int *value) = 0;
+                    
+                    virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Progress( 
+                        /* [in] */ int value) = 0;
+                    
+                    virtual HRESULT STDMETHODCALLTYPE add_OnProgressChanged( 
+                        /* [in] */ __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int *handler,
+                        /* [out][retval] */ EventRegistrationToken *token) = 0;
+                    
+                    virtual HRESULT STDMETHODCALLTYPE remove_OnProgressChanged( 
+                        /* [in] */ EventRegistrationToken token) = 0;
+                    
+                    virtual HRESULT STDMETHODCALLTYPE GetCppwinrtDataAsync( 
+                        /* [out][retval] */ __FIAsyncOperation_1_int **value) = 0;
+                    
+                    virtual HRESULT STDMETHODCALLTYPE GetWrlDataAsync( 
+                        /* [out][retval] */ __FIAsyncOperation_1_HSTRING **value) = 0;
+                    
+                    virtual HRESULT STDMETHODCALLTYPE CrawlWeb( 
+                        /* [in] */ ABI::Windows::Foundation::IUriRuntimeClass *uri,
+                        /* [out][retval] */ __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_Windows__CWeb__CHttp__CHttpProgress **value) = 0;
+                    
+                };
 
-            extern const __declspec(selectany) IID & IID_IDemoCore = __uuidof(IDemoCore);
+                extern const __declspec(selectany) IID & IID_IDemoCore = __uuidof(IDemoCore);
 
-            
+                
+            }  /* end namespace */
         }  /* end namespace */
     }  /* end namespace */
     extern "C" { 
     
 #else 	/* C style interface */
 
-    typedef struct __x_ABI_CSampleLib_CIDemoCoreVtbl
+    typedef struct __x_ABI_CSampleLib_CDemo_CIDemoCoreVtbl
     {
         BEGIN_INTERFACE
         
         HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
             _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
-            __x_ABI_CSampleLib_CIDemoCore * This);
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This);
         
         ULONG ( STDMETHODCALLTYPE *Release )( 
-            __x_ABI_CSampleLib_CIDemoCore * This);
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This);
         
         HRESULT ( STDMETHODCALLTYPE *GetIids )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [out] */ ULONG *iidCount,
             /* [size_is][size_is][out] */ IID **iids);
         
         HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [out] */ HSTRING *className);
         
         HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [out] */ TrustLevel *trustLevel);
         
         /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Progress )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [out][retval] */ int *value);
         
         /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Progress )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [in] */ int value);
         
         HRESULT ( STDMETHODCALLTYPE *add_OnProgressChanged )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
-            /* [in] */ __FITypedEventHandler_2_SampleLib__CDemoCore_int *handler,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
+            /* [in] */ __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int *handler,
             /* [out][retval] */ EventRegistrationToken *token);
         
         HRESULT ( STDMETHODCALLTYPE *remove_OnProgressChanged )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [in] */ EventRegistrationToken token);
         
         HRESULT ( STDMETHODCALLTYPE *GetCppwinrtDataAsync )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [out][retval] */ __FIAsyncOperation_1_int **value);
         
         HRESULT ( STDMETHODCALLTYPE *GetWrlDataAsync )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [out][retval] */ __FIAsyncOperation_1_HSTRING **value);
         
         HRESULT ( STDMETHODCALLTYPE *CrawlWeb )( 
-            __x_ABI_CSampleLib_CIDemoCore * This,
+            __x_ABI_CSampleLib_CDemo_CIDemoCore * This,
             /* [in] */ __x_ABI_CWindows_CFoundation_CIUriRuntimeClass *uri,
             /* [out][retval] */ __FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_Windows__CWeb__CHttp__CHttpProgress **value);
         
         END_INTERFACE
-    } __x_ABI_CSampleLib_CIDemoCoreVtbl;
+    } __x_ABI_CSampleLib_CDemo_CIDemoCoreVtbl;
 
-    interface __x_ABI_CSampleLib_CIDemoCore
+    interface __x_ABI_CSampleLib_CDemo_CIDemoCore
     {
-        CONST_VTBL struct __x_ABI_CSampleLib_CIDemoCoreVtbl *lpVtbl;
+        CONST_VTBL struct __x_ABI_CSampleLib_CDemo_CIDemoCoreVtbl *lpVtbl;
     };
 
     
@@ -972,45 +986,45 @@ EXTERN_C const IID IID___x_ABI_CSampleLib_CIDemoCore;
 #ifdef COBJMACROS
 
 
-#define __x_ABI_CSampleLib_CIDemoCore_QueryInterface(This,riid,ppvObject)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_AddRef(This)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_Release(This)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __x_ABI_CSampleLib_CIDemoCore_GetIids(This,iidCount,iids)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_GetIids(This,iidCount,iids)	\
     ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_GetRuntimeClassName(This,className)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_GetRuntimeClassName(This,className)	\
     ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_GetTrustLevel(This,trustLevel)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_GetTrustLevel(This,trustLevel)	\
     ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
 
 
-#define __x_ABI_CSampleLib_CIDemoCore_get_Progress(This,value)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_get_Progress(This,value)	\
     ( (This)->lpVtbl -> get_Progress(This,value) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_put_Progress(This,value)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_put_Progress(This,value)	\
     ( (This)->lpVtbl -> put_Progress(This,value) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_add_OnProgressChanged(This,handler,token)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_add_OnProgressChanged(This,handler,token)	\
     ( (This)->lpVtbl -> add_OnProgressChanged(This,handler,token) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_remove_OnProgressChanged(This,token)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_remove_OnProgressChanged(This,token)	\
     ( (This)->lpVtbl -> remove_OnProgressChanged(This,token) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_GetCppwinrtDataAsync(This,value)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_GetCppwinrtDataAsync(This,value)	\
     ( (This)->lpVtbl -> GetCppwinrtDataAsync(This,value) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_GetWrlDataAsync(This,value)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_GetWrlDataAsync(This,value)	\
     ( (This)->lpVtbl -> GetWrlDataAsync(This,value) ) 
 
-#define __x_ABI_CSampleLib_CIDemoCore_CrawlWeb(This,uri,value)	\
+#define __x_ABI_CSampleLib_CDemo_CIDemoCore_CrawlWeb(This,uri,value)	\
     ( (This)->lpVtbl -> CrawlWeb(This,uri,value) ) 
 
 #endif /* COBJMACROS */
@@ -1021,33 +1035,33 @@ EXTERN_C const IID IID___x_ABI_CSampleLib_CIDemoCore;
 
 
 
-#endif 	/* ____x_ABI_CSampleLib_CIDemoCore_INTERFACE_DEFINED__ */
+#endif 	/* ____x_ABI_CSampleLib_CDemo_CIDemoCore_INTERFACE_DEFINED__ */
 
 
 /* interface __MIDL_itf_SampleLib_0000_0013 */
 /* [local] */ 
 
-#ifndef RUNTIMECLASS_SampleLib_DemoCore_DEFINED
-#define RUNTIMECLASS_SampleLib_DemoCore_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_SampleLib_DemoCore[] = L"SampleLib.DemoCore";
+#ifndef RUNTIMECLASS_SampleLib_Demo_DemoCore_DEFINED
+#define RUNTIMECLASS_SampleLib_Demo_DemoCore_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_SampleLib_Demo_DemoCore[] = L"SampleLib.Demo.DemoCore";
 #endif
 #ifdef __cplusplus
 namespace ABI {
 namespace SampleLib {
+namespace Demo {
 class Message;
+} /*Demo*/
 } /*SampleLib*/
 }
 #endif
-
-#ifndef RUNTIMECLASS_SampleLib_Message_DEFINED
-#define RUNTIMECLASS_SampleLib_Message_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_SampleLib_Message[] = L"SampleLib.Message";
+#ifndef RUNTIMECLASS_SampleLib_Demo_Message_DEFINED
+#define RUNTIMECLASS_SampleLib_Demo_Message_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_SampleLib_Demo_Message[] = L"SampleLib.Demo.Message";
 #endif
 
 
 /* interface __MIDL_itf_SampleLib_0000_0013 */
 /* [local] */ 
-
 
 
 

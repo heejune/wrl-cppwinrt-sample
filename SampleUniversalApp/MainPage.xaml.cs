@@ -22,7 +22,7 @@ namespace SampleUniversalApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        SampleLib.DemoCore core = new SampleLib.DemoCore();
+        SampleLib.Demo.DemoCore core = new SampleLib.Demo.DemoCore();
 
         public MainPage()
         {
@@ -31,7 +31,7 @@ namespace SampleUniversalApp
             core.OnProgressChanged += Core_OnProgressChanged;
         }
 
-        private void Core_OnProgressChanged(SampleLib.DemoCore sender, int args)
+        private void Core_OnProgressChanged(SampleLib.Demo.DemoCore sender, int args)
         {
         }
 

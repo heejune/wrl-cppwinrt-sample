@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.01.0620 */
 /* at Tue Jan 19 12:14:07 2038
  */
-/* Compiler settings for C:\Users\heath\AppData\Local\Temp\SampleLib.idl-3422656c:
+/* Compiler settings for C:\Users\hekim\AppData\Local\Temp\SampleLib.idl-c2348337:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.01.0620 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
@@ -86,22 +86,22 @@ extern const SampleLib_MIDL_EXPR_FORMAT_STRING SampleLib__MIDL_ExprFormatString;
 extern const MIDL_STUB_DESC Object_StubDesc;
 
 
-extern const MIDL_SERVER_INFO __x_ABI_CSampleLib_CIMessage_ServerInfo;
-extern const MIDL_STUBLESS_PROXY_INFO __x_ABI_CSampleLib_CIMessage_ProxyInfo;
+extern const MIDL_SERVER_INFO __x_ABI_CSampleLib_CDemo_CIMessage_ServerInfo;
+extern const MIDL_STUBLESS_PROXY_INFO __x_ABI_CSampleLib_CDemo_CIMessage_ProxyInfo;
 
 
 extern const MIDL_STUB_DESC Object_StubDesc;
 
 
-extern const MIDL_SERVER_INFO __FITypedEventHandler_2_SampleLib__CDemoCore_int_ServerInfo;
-extern const MIDL_STUBLESS_PROXY_INFO __FITypedEventHandler_2_SampleLib__CDemoCore_int_ProxyInfo;
+extern const MIDL_SERVER_INFO __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_ServerInfo;
+extern const MIDL_STUBLESS_PROXY_INFO __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_ProxyInfo;
 
 
 extern const MIDL_STUB_DESC Object_StubDesc;
 
 
-extern const MIDL_SERVER_INFO __x_ABI_CSampleLib_CIDemoCore_ServerInfo;
-extern const MIDL_STUBLESS_PROXY_INFO __x_ABI_CSampleLib_CIDemoCore_ProxyInfo;
+extern const MIDL_SERVER_INFO __x_ABI_CSampleLib_CDemo_CIDemoCore_ServerInfo;
+extern const MIDL_STUBLESS_PROXY_INFO __x_ABI_CSampleLib_CDemo_CIDemoCore_ProxyInfo;
 
 
 extern const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TABLE_SIZE ];
@@ -514,17 +514,17 @@ static const SampleLib_MIDL_TYPE_FORMAT_STRING SampleLib__MIDL_TypeFormatString 
 /* 78 */	
 			0x2f,		/* FC_IP */
 			0x5a,		/* FC_CONSTANT_IID */
-/* 80 */	NdrFcLong( 0x1f1e9031 ),	/* 522096689 */
-/* 84 */	NdrFcShort( 0x11dc ),	/* 4572 */
-/* 86 */	NdrFcShort( 0x555b ),	/* 21851 */
-/* 88 */	0x9b,		/* 155 */
-			0x1c,		/* 28 */
-/* 90 */	0x5,		/* 5 */
-			0x86,		/* 134 */
-/* 92 */	0xf8,		/* 248 */
-			0x19,		/* 25 */
-/* 94 */	0x1e,		/* 30 */
-			0x14,		/* 20 */
+/* 80 */	NdrFcLong( 0x7258528c ),	/* 1918390924 */
+/* 84 */	NdrFcShort( 0x4b14 ),	/* 19220 */
+/* 86 */	NdrFcShort( 0x5543 ),	/* 21827 */
+/* 88 */	0x94,		/* 148 */
+			0xbb,		/* 187 */
+/* 90 */	0x71,		/* 113 */
+			0xe3,		/* 227 */
+/* 92 */	0x9f,		/* 159 */
+			0xc0,		/* 192 */
+/* 94 */	0x3e,		/* 62 */
+			0x27,		/* 39 */
 /* 96 */	
 			0x11, 0x4,	/* FC_RP [alloced_on_stack] */
 /* 98 */	NdrFcShort( 0x2 ),	/* Offset= 2 (100) */
@@ -622,7 +622,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3106, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3107, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -630,7 +630,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3107, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3108, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -638,7 +638,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3108, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3109, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -646,7 +646,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3109, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3110, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -654,7 +654,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3110, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3111, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -662,7 +662,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3111, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3112, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -670,7 +670,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3112, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3113, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -678,7 +678,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3113, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3114, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -686,7 +686,7 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3114, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3115, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -702,11 +702,11 @@ static const USER_MARSHAL_ROUTINE_QUADRUPLE UserMarshalRoutines[ WIRE_MARSHAL_TA
    GUID={0xAF86E2E0,0xB12D,0x4c6a,{0x9C,0x5A,0xD7,0xAA,0x65,0x10,0x1E,0x90}} */
 
 
-/* Object interface: __x_ABI_CSampleLib_CIMessage, ver. 0.0,
+/* Object interface: __x_ABI_CSampleLib_CDemo_CIMessage, ver. 0.0,
    GUID={0x74f49eb3,0x3491,0x40c3,{0xa4,0xb7,0x87,0x11,0x35,0x77,0xc4,0xb1}} */
 
 #pragma code_seg(".orpc")
-static const unsigned short __x_ABI_CSampleLib_CIMessage_FormatStringOffsetTable[] =
+static const unsigned short __x_ABI_CSampleLib_CDemo_CIMessage_FormatStringOffsetTable[] =
     {
     (unsigned short) -1,
     (unsigned short) -1,
@@ -715,43 +715,43 @@ static const unsigned short __x_ABI_CSampleLib_CIMessage_FormatStringOffsetTable
     36
     };
 
-static const MIDL_STUBLESS_PROXY_INFO __x_ABI_CSampleLib_CIMessage_ProxyInfo =
+static const MIDL_STUBLESS_PROXY_INFO __x_ABI_CSampleLib_CDemo_CIMessage_ProxyInfo =
     {
     &Object_StubDesc,
     SampleLib__MIDL_ProcFormatString.Format,
-    &__x_ABI_CSampleLib_CIMessage_FormatStringOffsetTable[-3],
+    &__x_ABI_CSampleLib_CDemo_CIMessage_FormatStringOffsetTable[-3],
     0,
     0,
     0
     };
 
 
-static const MIDL_SERVER_INFO __x_ABI_CSampleLib_CIMessage_ServerInfo = 
+static const MIDL_SERVER_INFO __x_ABI_CSampleLib_CDemo_CIMessage_ServerInfo = 
     {
     &Object_StubDesc,
     0,
     SampleLib__MIDL_ProcFormatString.Format,
-    &__x_ABI_CSampleLib_CIMessage_FormatStringOffsetTable[-3],
+    &__x_ABI_CSampleLib_CDemo_CIMessage_FormatStringOffsetTable[-3],
     0,
     0,
     0,
     0};
-CINTERFACE_PROXY_VTABLE(8) ___x_ABI_CSampleLib_CIMessageProxyVtbl = 
+CINTERFACE_PROXY_VTABLE(8) ___x_ABI_CSampleLib_CDemo_CIMessageProxyVtbl = 
 {
-    &__x_ABI_CSampleLib_CIMessage_ProxyInfo,
-    &IID___x_ABI_CSampleLib_CIMessage,
+    &__x_ABI_CSampleLib_CDemo_CIMessage_ProxyInfo,
+    &IID___x_ABI_CSampleLib_CDemo_CIMessage,
     IUnknown_QueryInterface_Proxy,
     IUnknown_AddRef_Proxy,
     IUnknown_Release_Proxy ,
     0 /* IInspectable::GetIids */ ,
     0 /* IInspectable::GetRuntimeClassName */ ,
     0 /* IInspectable::GetTrustLevel */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIMessage::get_Description */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIMessage::put_Description */
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIMessage::get_Description */ ,
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIMessage::put_Description */
 };
 
 
-static const PRPC_STUB_FUNCTION __x_ABI_CSampleLib_CIMessage_table[] =
+static const PRPC_STUB_FUNCTION __x_ABI_CSampleLib_CDemo_CIMessage_table[] =
 {
     STUB_FORWARDING_FUNCTION,
     STUB_FORWARDING_FUNCTION,
@@ -760,17 +760,17 @@ static const PRPC_STUB_FUNCTION __x_ABI_CSampleLib_CIMessage_table[] =
     NdrStubCall2
 };
 
-CInterfaceStubVtbl ___x_ABI_CSampleLib_CIMessageStubVtbl =
+CInterfaceStubVtbl ___x_ABI_CSampleLib_CDemo_CIMessageStubVtbl =
 {
-    &IID___x_ABI_CSampleLib_CIMessage,
-    &__x_ABI_CSampleLib_CIMessage_ServerInfo,
+    &IID___x_ABI_CSampleLib_CDemo_CIMessage,
+    &__x_ABI_CSampleLib_CDemo_CIMessage_ServerInfo,
     8,
-    &__x_ABI_CSampleLib_CIMessage_table[-3],
+    &__x_ABI_CSampleLib_CDemo_CIMessage_table[-3],
     CStdStubBuffer_DELEGATING_METHODS
 };
 
 
-/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3115, ver. 0.0,
+/* Standard interface: __MIDL_itf_SampleLib2Eidl_0000_3116, ver. 0.0,
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
@@ -778,50 +778,50 @@ CInterfaceStubVtbl ___x_ABI_CSampleLib_CIMessageStubVtbl =
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Object interface: __FITypedEventHandler_2_SampleLib__CDemoCore_int, ver. 0.0,
-   GUID={0x1f1e9031,0x11dc,0x555b,{0x9b,0x1c,0x05,0x86,0xf8,0x19,0x1e,0x14}} */
+/* Object interface: __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int, ver. 0.0,
+   GUID={0x7258528c,0x4b14,0x5543,{0x94,0xbb,0x71,0xe3,0x9f,0xc0,0x3e,0x27}} */
 
 #pragma code_seg(".orpc")
-static const unsigned short __FITypedEventHandler_2_SampleLib__CDemoCore_int_FormatStringOffsetTable[] =
+static const unsigned short __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_FormatStringOffsetTable[] =
     {
     72
     };
 
-static const MIDL_STUBLESS_PROXY_INFO __FITypedEventHandler_2_SampleLib__CDemoCore_int_ProxyInfo =
+static const MIDL_STUBLESS_PROXY_INFO __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_ProxyInfo =
     {
     &Object_StubDesc,
     SampleLib__MIDL_ProcFormatString.Format,
-    &__FITypedEventHandler_2_SampleLib__CDemoCore_int_FormatStringOffsetTable[-3],
+    &__FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_FormatStringOffsetTable[-3],
     0,
     0,
     0
     };
 
 
-static const MIDL_SERVER_INFO __FITypedEventHandler_2_SampleLib__CDemoCore_int_ServerInfo = 
+static const MIDL_SERVER_INFO __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_ServerInfo = 
     {
     &Object_StubDesc,
     0,
     SampleLib__MIDL_ProcFormatString.Format,
-    &__FITypedEventHandler_2_SampleLib__CDemoCore_int_FormatStringOffsetTable[-3],
+    &__FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_FormatStringOffsetTable[-3],
     0,
     0,
     0,
     0};
-CINTERFACE_PROXY_VTABLE(4) ___FITypedEventHandler_2_SampleLib__CDemoCore_intProxyVtbl = 
+CINTERFACE_PROXY_VTABLE(4) ___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_intProxyVtbl = 
 {
-    &__FITypedEventHandler_2_SampleLib__CDemoCore_int_ProxyInfo,
-    &IID___FITypedEventHandler_2_SampleLib__CDemoCore_int,
+    &__FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_ProxyInfo,
+    &IID___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int,
     IUnknown_QueryInterface_Proxy,
     IUnknown_AddRef_Proxy,
     IUnknown_Release_Proxy ,
-    (void *) (INT_PTR) -1 /* __FITypedEventHandler_2_SampleLib__CDemoCore_int::Invoke */
+    (void *) (INT_PTR) -1 /* __FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int::Invoke */
 };
 
-const CInterfaceStubVtbl ___FITypedEventHandler_2_SampleLib__CDemoCore_intStubVtbl =
+const CInterfaceStubVtbl ___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_intStubVtbl =
 {
-    &IID___FITypedEventHandler_2_SampleLib__CDemoCore_int,
-    &__FITypedEventHandler_2_SampleLib__CDemoCore_int_ServerInfo,
+    &IID___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int,
+    &__FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int_ServerInfo,
     4,
     0, /* pure interpreted */
     CStdStubBuffer_METHODS
@@ -832,11 +832,11 @@ const CInterfaceStubVtbl ___FITypedEventHandler_2_SampleLib__CDemoCore_intStubVt
    GUID={0x00000000,0x0000,0x0000,{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00}} */
 
 
-/* Object interface: __x_ABI_CSampleLib_CIDemoCore, ver. 0.0,
+/* Object interface: __x_ABI_CSampleLib_CDemo_CIDemoCore, ver. 0.0,
    GUID={0xd93f8ce1,0xba66,0x4e27,{0xa0,0xce,0x39,0x48,0xc2,0x3e,0xf8,0xd2}} */
 
 #pragma code_seg(".orpc")
-static const unsigned short __x_ABI_CSampleLib_CIDemoCore_FormatStringOffsetTable[] =
+static const unsigned short __x_ABI_CSampleLib_CDemo_CIDemoCore_FormatStringOffsetTable[] =
     {
     (unsigned short) -1,
     (unsigned short) -1,
@@ -850,48 +850,48 @@ static const unsigned short __x_ABI_CSampleLib_CIDemoCore_FormatStringOffsetTabl
     336
     };
 
-static const MIDL_STUBLESS_PROXY_INFO __x_ABI_CSampleLib_CIDemoCore_ProxyInfo =
+static const MIDL_STUBLESS_PROXY_INFO __x_ABI_CSampleLib_CDemo_CIDemoCore_ProxyInfo =
     {
     &Object_StubDesc,
     SampleLib__MIDL_ProcFormatString.Format,
-    &__x_ABI_CSampleLib_CIDemoCore_FormatStringOffsetTable[-3],
+    &__x_ABI_CSampleLib_CDemo_CIDemoCore_FormatStringOffsetTable[-3],
     0,
     0,
     0
     };
 
 
-static const MIDL_SERVER_INFO __x_ABI_CSampleLib_CIDemoCore_ServerInfo = 
+static const MIDL_SERVER_INFO __x_ABI_CSampleLib_CDemo_CIDemoCore_ServerInfo = 
     {
     &Object_StubDesc,
     0,
     SampleLib__MIDL_ProcFormatString.Format,
-    &__x_ABI_CSampleLib_CIDemoCore_FormatStringOffsetTable[-3],
+    &__x_ABI_CSampleLib_CDemo_CIDemoCore_FormatStringOffsetTable[-3],
     0,
     0,
     0,
     0};
-CINTERFACE_PROXY_VTABLE(13) ___x_ABI_CSampleLib_CIDemoCoreProxyVtbl = 
+CINTERFACE_PROXY_VTABLE(13) ___x_ABI_CSampleLib_CDemo_CIDemoCoreProxyVtbl = 
 {
-    &__x_ABI_CSampleLib_CIDemoCore_ProxyInfo,
-    &IID___x_ABI_CSampleLib_CIDemoCore,
+    &__x_ABI_CSampleLib_CDemo_CIDemoCore_ProxyInfo,
+    &IID___x_ABI_CSampleLib_CDemo_CIDemoCore,
     IUnknown_QueryInterface_Proxy,
     IUnknown_AddRef_Proxy,
     IUnknown_Release_Proxy ,
     0 /* IInspectable::GetIids */ ,
     0 /* IInspectable::GetRuntimeClassName */ ,
     0 /* IInspectable::GetTrustLevel */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIDemoCore::get_Progress */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIDemoCore::put_Progress */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIDemoCore::add_OnProgressChanged */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIDemoCore::remove_OnProgressChanged */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIDemoCore::GetCppwinrtDataAsync */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIDemoCore::GetWrlDataAsync */ ,
-    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CIDemoCore::CrawlWeb */
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIDemoCore::get_Progress */ ,
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIDemoCore::put_Progress */ ,
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIDemoCore::add_OnProgressChanged */ ,
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIDemoCore::remove_OnProgressChanged */ ,
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIDemoCore::GetCppwinrtDataAsync */ ,
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIDemoCore::GetWrlDataAsync */ ,
+    (void *) (INT_PTR) -1 /* __x_ABI_CSampleLib_CDemo_CIDemoCore::CrawlWeb */
 };
 
 
-static const PRPC_STUB_FUNCTION __x_ABI_CSampleLib_CIDemoCore_table[] =
+static const PRPC_STUB_FUNCTION __x_ABI_CSampleLib_CDemo_CIDemoCore_table[] =
 {
     STUB_FORWARDING_FUNCTION,
     STUB_FORWARDING_FUNCTION,
@@ -905,12 +905,12 @@ static const PRPC_STUB_FUNCTION __x_ABI_CSampleLib_CIDemoCore_table[] =
     NdrStubCall2
 };
 
-CInterfaceStubVtbl ___x_ABI_CSampleLib_CIDemoCoreStubVtbl =
+CInterfaceStubVtbl ___x_ABI_CSampleLib_CDemo_CIDemoCoreStubVtbl =
 {
-    &IID___x_ABI_CSampleLib_CIDemoCore,
-    &__x_ABI_CSampleLib_CIDemoCore_ServerInfo,
+    &IID___x_ABI_CSampleLib_CDemo_CIDemoCore,
+    &__x_ABI_CSampleLib_CDemo_CIDemoCore_ServerInfo,
     13,
-    &__x_ABI_CSampleLib_CIDemoCore_table[-3],
+    &__x_ABI_CSampleLib_CDemo_CIDemoCore_table[-3],
     CStdStubBuffer_DELEGATING_METHODS
 };
 
@@ -944,25 +944,25 @@ static const MIDL_STUB_DESC Object_StubDesc =
 
 const CInterfaceProxyVtbl * const _SampleLib_ProxyVtblList[] = 
 {
-    ( CInterfaceProxyVtbl *) &___FITypedEventHandler_2_SampleLib__CDemoCore_intProxyVtbl,
-    ( CInterfaceProxyVtbl *) &___x_ABI_CSampleLib_CIMessageProxyVtbl,
-    ( CInterfaceProxyVtbl *) &___x_ABI_CSampleLib_CIDemoCoreProxyVtbl,
+    ( CInterfaceProxyVtbl *) &___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_intProxyVtbl,
+    ( CInterfaceProxyVtbl *) &___x_ABI_CSampleLib_CDemo_CIMessageProxyVtbl,
+    ( CInterfaceProxyVtbl *) &___x_ABI_CSampleLib_CDemo_CIDemoCoreProxyVtbl,
     0
 };
 
 const CInterfaceStubVtbl * const _SampleLib_StubVtblList[] = 
 {
-    ( CInterfaceStubVtbl *) &___FITypedEventHandler_2_SampleLib__CDemoCore_intStubVtbl,
-    ( CInterfaceStubVtbl *) &___x_ABI_CSampleLib_CIMessageStubVtbl,
-    ( CInterfaceStubVtbl *) &___x_ABI_CSampleLib_CIDemoCoreStubVtbl,
+    ( CInterfaceStubVtbl *) &___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_intStubVtbl,
+    ( CInterfaceStubVtbl *) &___x_ABI_CSampleLib_CDemo_CIMessageStubVtbl,
+    ( CInterfaceStubVtbl *) &___x_ABI_CSampleLib_CDemo_CIDemoCoreStubVtbl,
     0
 };
 
 PCInterfaceName const _SampleLib_InterfaceNamesList[] = 
 {
-    "__FITypedEventHandler_2_SampleLib__CDemoCore_int",
-    "__x_ABI_CSampleLib_CIMessage",
-    "__x_ABI_CSampleLib_CIDemoCore",
+    "__FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int",
+    "__x_ABI_CSampleLib_CDemo_CIMessage",
+    "__x_ABI_CSampleLib_CDemo_CIDemoCore",
     0
 };
 

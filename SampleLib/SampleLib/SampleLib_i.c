@@ -8,7 +8,7 @@
  /* File created by MIDL compiler version 8.01.0620 */
 /* at Tue Jan 19 12:14:07 2038
  */
-/* Compiler settings for C:\Users\heath\AppData\Local\Temp\SampleLib.idl-3422656c:
+/* Compiler settings for C:\Users\hekim\AppData\Local\Temp\SampleLib.idl-c2348337:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.01.0620 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
@@ -67,13 +67,13 @@ typedef IID CLSID;
 
 #endif !_MIDL_USE_GUIDDEF_
 
-MIDL_DEFINE_GUID(IID, IID___x_ABI_CSampleLib_CIMessage,0x74f49eb3,0x3491,0x40c3,0xa4,0xb7,0x87,0x11,0x35,0x77,0xc4,0xb1);
+MIDL_DEFINE_GUID(IID, IID___x_ABI_CSampleLib_CDemo_CIMessage,0x74f49eb3,0x3491,0x40c3,0xa4,0xb7,0x87,0x11,0x35,0x77,0xc4,0xb1);
 
 
-MIDL_DEFINE_GUID(IID, IID___FITypedEventHandler_2_SampleLib__CDemoCore_int,0x1f1e9031,0x11dc,0x555b,0x9b,0x1c,0x05,0x86,0xf8,0x19,0x1e,0x14);
+MIDL_DEFINE_GUID(IID, IID___FITypedEventHandler_2_SampleLib__CDemo__CDemoCore_int,0x7258528c,0x4b14,0x5543,0x94,0xbb,0x71,0xe3,0x9f,0xc0,0x3e,0x27);
 
 
-MIDL_DEFINE_GUID(IID, IID___x_ABI_CSampleLib_CIDemoCore,0xd93f8ce1,0xba66,0x4e27,0xa0,0xce,0x39,0x48,0xc2,0x3e,0xf8,0xd2);
+MIDL_DEFINE_GUID(IID, IID___x_ABI_CSampleLib_CDemo_CIDemoCore,0xd93f8ce1,0xba66,0x4e27,0xa0,0xce,0x39,0x48,0xc2,0x3e,0xf8,0xd2);
 
 #undef MIDL_DEFINE_GUID
 

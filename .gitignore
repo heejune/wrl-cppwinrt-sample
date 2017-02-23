@@ -8,3 +8,4 @@ SampleLib/Debug/
 SampleLib.Static/ARM/
 *.ipch
 *.db
+*.opendb

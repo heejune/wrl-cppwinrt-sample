@@ -4,58 +4,70 @@ import "Windows.Foundation.idl";
 import "eventtoken.idl";
 import "Windows.Web.Http.idl";
 
-
 #define COMPONENT_VERSION 1.0
+
+// Forward Declare
+namespace SampleLib
+{
+	namespace Demo
+	{
+		interface IDemoCore;
+		interface IMessage;
+	}
+}
 
 namespace SampleLib
 {
-	runtimeclass DemoCore;
-
-	//declare
-	//{
-	//	interface Windows.Foundation.IAsyncOperation<HSTRING>;
-	//}
-
-	[uuid(74f49eb3-3491-40c3-a4b7-87113577c4b1), version(COMPONENT_VERSION)]
-	interface IMessage : IInspectable
+		namespace Demo
 	{
-		[propget] HRESULT Description([out, retval] HSTRING* value);
-		[propput] HRESULT Description([in] HSTRING value);
-	};
+		runtimeclass DemoCore;
 
-	[uuid(d93f8ce1-ba66-4e27-a0ce-3948c23ef8d2), version(COMPONENT_VERSION)]
-	interface IDemoCore : IInspectable
-	{
-		// progress set/get
-		[propget] HRESULT Progress([out, retval] int* value);
-		[propput] HRESULT Progress([in] int value);
+		//declare
+		//{
+		//	interface Windows.Foundation.IAsyncOperation<HSTRING>;
+		//}
 
-		// property changed event handler
-		[eventadd] HRESULT OnProgressChanged([in] Windows.Foundation.TypedEventHandler<DemoCore *, int> * handler,
-			[out, retval] EventRegistrationToken * token);
+		[uuid(74f49eb3-3491-40c3-a4b7-87113577c4b1), version(COMPONENT_VERSION)]
+		interface IMessage : IInspectable
+		{
+			[propget] HRESULT Description([out, retval] HSTRING* value);
+			[propput] HRESULT Description([in] HSTRING value);
+		};
 
-		[eventremove] HRESULT OnProgressChanged([in] EventRegistrationToken token);
+		[uuid(d93f8ce1-ba66-4e27-a0ce-3948c23ef8d2), version(COMPONENT_VERSION)]
+		interface IDemoCore : IInspectable
+		{
+			// progress set/get
+			[propget] HRESULT Progress([out, retval] int* value);
+			[propput] HRESULT Progress([in] int value);
 
-		// IAsyncOperation - cppwinrt
-		HRESULT GetCppwinrtDataAsync([out][retval] Windows.Foundation.IAsyncOperation<int>** value);
+			// property changed event handler
+			[eventadd] HRESULT OnProgressChanged([in] Windows.Foundation.TypedEventHandler<DemoCore *, int> * handler,
+				[out, retval] EventRegistrationToken * token);
 
-		// IAsyncOperation - WRL
-		HRESULT GetWrlDataAsync([out][retval] Windows.Foundation.IAsyncOperation<HSTRING>** value);
+			[eventremove] HRESULT OnProgressChanged([in] EventRegistrationToken token);
 
-		// 
-		HRESULT CrawlWeb([in] Windows.Foundation.Uri* uri, [out, retval] Windows.Foundation.IAsyncOperationWithProgress<Windows.Storage.Streams.IBuffer*, Windows.Web.Http.HttpProgress>** value);
+			// IAsyncOperation - cppwinrt
+			HRESULT GetCppwinrtDataAsync([out][retval] Windows.Foundation.IAsyncOperation<int>** value);
 
-	}
+			// IAsyncOperation - WRL
+			HRESULT GetWrlDataAsync([out][retval] Windows.Foundation.IAsyncOperation<HSTRING>** value);
 
-	[version(COMPONENT_VERSION), activatable(COMPONENT_VERSION)]
-	runtimeclass DemoCore
-	{
-		[default] interface IDemoCore;
-	}
+			// 
+			HRESULT CrawlWeb([in] Windows.Foundation.Uri* uri,[out, retval] Windows.Foundation.IAsyncOperationWithProgress<Windows.Storage.Streams.IBuffer*, Windows.Web.Http.HttpProgress>** value);
 
-	[version(COMPONENT_VERSION), activatable(COMPONENT_VERSION)]
-	runtimeclass Message
-	{
-		[default] interface IMessage;
+		}
+
+		[version(COMPONENT_VERSION), activatable(COMPONENT_VERSION)]
+		runtimeclass DemoCore
+		{
+			[default] interface IDemoCore;
+		}
+
+			[version(COMPONENT_VERSION), activatable(COMPONENT_VERSION)]
+		runtimeclass Message
+		{
+			[default] interface IMessage;
+		}
 	}
 }

@@ -121,7 +121,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
       <AdditionalOptions>/std:c++latest /await %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -135,7 +135,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
       <AdditionalOptions>/std:c++latest /await %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -149,7 +149,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
       <AdditionalOptions>/std:c++latest /await %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -163,7 +163,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
       <AdditionalOptions>/std:c++latest /await %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -177,7 +177,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
       <AdditionalOptions>/std:c++latest /await %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -191,7 +191,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\cppwinrt\10.0.14393.0;..\..\Win2D\winrt\inc;$(SolutionDir)SampleLib;%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
       <AdditionalOptions>/std:c++latest /await %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>

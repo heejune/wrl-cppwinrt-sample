@@ -1,13 +1,13 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-//#include "..\SampleLib\SampleLib\SampleLib_h.h"
 #include "..\SampleLib.Shared\DemoCore.h"
 
 using namespace Microsoft::WRL;
-using namespace ABI::SampleLib;
+using namespace Microsoft::WRL::Wrappers;
+using namespace ABI::SampleLib::Demo;
 #pragma comment(lib, "runtimeobject")
 
-
+// from Win2D
 #define TEST_METHOD_EX(METHOD_NAME)                                             \
     TEST_METHOD(METHOD_NAME)                                                    \
     {                                                                           \
@@ -32,7 +32,30 @@ namespace SampleNativeTest
 		TEST_METHOD_EX(TestMethod1)
 		{
 			auto lib = Make<DemoCore>();
-		}
 
+			Microsoft::WRL::ComPtr<ABI::Windows::Foundation::IAsyncOperation<int>> pAsyncAction;
+
+			// taken from https://github.com/walbourn/directx-sdk-samples/blob/master/XAudio2/XAudio2Enumerate/XAudio2Enumerate.cpp
+			HRESULT hr = lib->GetCppwinrtDataAsync(pAsyncAction.GetAddressOf());
+
+			Event asyncCompleted(CreateEventEx(nullptr, nullptr, CREATE_EVENT_MANUAL_RESET, WRITE_OWNER | EVENT_ALL_ACCESS));
+			
+			if (!asyncCompleted.IsValid())
+			{
+				Assert::IsTrue(SUCCEEDED(HRESULT_FROM_WIN32(GetLastError())));
+			}
+
+			auto callback = Callback< ABI::Windows::Foundation::IAsyncOperationCompletedHandler<int> >
+					( [&] (ABI::Windows::Foundation::IAsyncOperation<int>* pHandler, AsyncStatus status)
+			{
+				SetEvent(asyncCompleted.Get());
+				return S_OK;
+			});
+
+			hr = pAsyncAction->put_Completed(callback.Get());
+				
+			WaitForSingleObject(asyncCompleted.Get(), INFINITE);
+			Assert::IsTrue(SUCCEEDED(hr));
+		}
 	};
 }

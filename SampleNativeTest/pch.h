@@ -10,6 +10,9 @@
 // Headers for CppUnitTest
 #include "CppUnitTest.h"
 
+#include <Windows.h>
+#include <winerror.h>
+
 // TODO: reference additional headers your program requires here
 // Standard C++
 #include <algorithm>

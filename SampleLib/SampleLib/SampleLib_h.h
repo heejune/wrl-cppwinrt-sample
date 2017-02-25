@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.01.0620 */
 /* at Tue Jan 19 12:14:07 2038
  */
-/* Compiler settings for C:\Users\hekim\AppData\Local\Temp\SampleLib.idl-c2348337:
+/* Compiler settings for C:\Users\hekim\AppData\Local\Temp\SampleLib.idl-eb784023:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.01.0620 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
@@ -577,6 +577,15 @@ extern "C" {
 #endif //__cplusplus
 #endif /* DEF___FIAsyncOperationWithProgress_2_Windows__CStorage__CStreams__CIBuffer_Windows__CWeb__CHttp__CHttpProgress_USE */
 
+#ifdef __cplusplus
+namespace ABI {
+namespace SampleLib {
+namespace Demo {
+class Message;
+} /*Demo*/
+} /*SampleLib*/
+}
+#endif
 #if !defined(____x_ABI_CSampleLib_CDemo_CIMessage_INTERFACE_DEFINED__)
 extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_SampleLib_Demo_IMessage[] = L"SampleLib.Demo.IMessage";
 #endif /* !defined(____x_ABI_CSampleLib_CDemo_CIMessage_INTERFACE_DEFINED__) */
@@ -1044,15 +1053,6 @@ EXTERN_C const IID IID___x_ABI_CSampleLib_CDemo_CIDemoCore;
 #ifndef RUNTIMECLASS_SampleLib_Demo_DemoCore_DEFINED
 #define RUNTIMECLASS_SampleLib_Demo_DemoCore_DEFINED
 extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_SampleLib_Demo_DemoCore[] = L"SampleLib.Demo.DemoCore";
-#endif
-#ifdef __cplusplus
-namespace ABI {
-namespace SampleLib {
-namespace Demo {
-class Message;
-} /*Demo*/
-} /*SampleLib*/
-}
 #endif
 #ifndef RUNTIMECLASS_SampleLib_Demo_Message_DEFINED
 #define RUNTIMECLASS_SampleLib_Demo_Message_DEFINED

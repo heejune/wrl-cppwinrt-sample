@@ -1,0 +1,14 @@
+
+* SampleLib
+
+This sample demonstrates how to build a WinRT component with WRL(non C++/CX) and cppwinrt project. 
+
+* Description
+
+https://heejune.me/2017/02/25/building-winrt-component-with-wrlnon-ccx-and-cppwinrt/
+
+* References
+
+- https://github.com/walbourn/directx-sdk-samples/blob/master/XAudio2/XAudio2Enumerate/XAudio2Enumerate.cpp
+- https://blogs.msdn.microsoft.com/asim_goheer/2014/11/01/creating-a-log-file-in-windows-runtime-using-c/
+- Win2D https://github.com/Microsoft/Win2D

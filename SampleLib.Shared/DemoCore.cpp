@@ -81,7 +81,7 @@ namespace ABI
 					co_await 5000ms;
 				}
 
-				co_return 1;
+				co_return 123;
 			}
 
 			STDMETHODIMP DemoCore::GetCppwinrtDataAsync(::ABI::Windows::Foundation::IAsyncOperation<int>** value)
